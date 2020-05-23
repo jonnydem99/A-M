@@ -1,6 +1,47 @@
 html {
     text-align: center;
 }
-#titleBar {
+p {
+    text-align: center;
+    position: relative;
+   
+}
+h3 {
+    text-align: center;
+    position: relative;
+   
+}
+#EverythingExceptTitle {
+   margin: auto;
+   width: 70%;
+}
+h1 {
     background-color: rgb(68, 48, 248);
+}
+ol {
+    padding: 30px;
+    display: inline-block;
+    text-align: left;
+    clear: both;
+    background-color: rgb(175, 176, 255);
+}
+ul {
+    padding: 30px;
+    text-align: left; 
+    clear: both;
+    display:inline-block;
+    background-color: rgb(175, 176, 255);
+}
+#submit {
+    position: relative;
+    top: 6px;
+    align-content: center;
+}
+img {
+    padding: 10px;
+}
+.images {
+    background-color: rgb(120, 250, 159);
+    margin: auto;
+    width: 80%;
 }
