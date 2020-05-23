@@ -23,6 +23,7 @@ p {
    
 }
 h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     position: relative;
    
@@ -37,6 +38,8 @@ h1 {
     background-color: rgb(46, 147, 60);
 }
 ol {
+    border-style: solid;
+    border-color: rgb(10, 31, 28);
     color: rgb(10, 31, 28);
     padding: 30px;
     padding-top: 10PX;
@@ -47,6 +50,8 @@ ol {
     background-color: rgb(129, 193, 75);
 }
 ul {
+    border-style: solid;
+    border-color: rgb(10, 31, 28);
     padding: 30px;
     padding-top: 10PX;
     padding-bottom: 10px;
@@ -61,10 +66,20 @@ ul {
     align-content: center;
 }
 img {
-    padding: 10px;
+    border-color: rgb(10, 31, 28);
+}
+#willowMainImage {
+    border-style: solid;
+    border-color: rgb(10, 31, 28);
 }
 .images {
+    border-style: solid;
+    border-color: rgb(10, 31, 28);
     background-color: rgb(129, 193, 75);
     margin: auto;
-    width: 80%;
+    width: 70%;
+    padding: 10px;
+}
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
