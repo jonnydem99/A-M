@@ -1,9 +1,25 @@
 html {
+    background-color: rgb(236, 186, 130);
     text-align: center;
 }
+#twitterlogo {
+    position: relative;
+    float: left;
+    bottom: 10px;
+    padding: 9px;
+    left: 45.5%;
+    top: 2%
+}
+#willowfan {
+    position: relative;
+    float: left;
+    left: 45.5%;
+}
 p {
+    color: rgb(10, 31, 28);
     text-align: center;
     position: relative;
+    font-family: Helvetica, sans-serif;
    
 }
 h3 {
@@ -16,21 +32,28 @@ h3 {
    width: 70%;
 }
 h1 {
-    background-color: rgb(68, 48, 248);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: rgb(46, 147, 60);
 }
 ol {
+    color: rgb(10, 31, 28);
     padding: 30px;
+    padding-top: 10PX;
+    padding-bottom: 10px;
     display: inline-block;
     text-align: left;
     clear: both;
-    background-color: rgb(175, 176, 255);
+    background-color: rgb(129, 193, 75);
 }
 ul {
     padding: 30px;
+    padding-top: 10PX;
+    padding-bottom: 10px;
     text-align: left; 
     clear: both;
     display:inline-block;
-    background-color: rgb(175, 176, 255);
+    background-color: rgb(129, 193, 75);
 }
 #submit {
     position: relative;
@@ -41,7 +64,7 @@ img {
     padding: 10px;
 }
 .images {
-    background-color: rgb(120, 250, 159);
+    background-color: rgb(129, 193, 75);
     margin: auto;
     width: 80%;
 }
