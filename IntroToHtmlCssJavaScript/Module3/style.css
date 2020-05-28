@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Caveat;
+    src: url('caveat.ttf') format('truetype');
+}
+body {
+    font-family: Chonburi;
+}
+@font-face {
+    font-family: Chonburi;
+    src: url('chonburi.ttf') format('truetype');
+    }
