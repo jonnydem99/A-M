@@ -49,17 +49,17 @@
         box-shadow: -1px 01px 6px
     }
 
-@media print {
-    header {
-        padding: 0px;
+    @media print {
+        header {
+            padding: 0px;
+        }
+        header > h1 {
+            font-size: 2em;
+        }
+        header h2 {
+            display: none;
+        }
+        article {
+            box-shadow: none;
+        }
     }
-    article {
-        box-shadow: none;
-    }
-    header > h1 {
-        font-size: 2em;
-    }
-    header > h2 {
-        display: none
-    }
-}
