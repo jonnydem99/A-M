@@ -1,0 +1,72 @@
+.carousel-inner > .item {
+    background-color: black;
+    padding-top: 0;
+    max-height: 675px;
+    align-content: center;
+ }
+ #menu {
+     min-height: 190px; 
+     height: 100%; 
+     background-color: black;
+ }
+#Carousel {
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+}
+html {
+    background-color: black;
+}
+#logo {
+    margin-top: 0;
+    margin-left: 0;
+    width: 40%;
+    height: 160%;
+    background-color: black;
+    float: left;
+    padding: 4%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1%;
+    
+}
+.menuItems {
+    margin-right: 0;
+    margin-left: 0;
+    width: 12%;
+    height: 160%;
+    background-color: black;
+    float: right;
+    padding: 4%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1%;
+    
+}    
+#logoContainer {
+    background-color: black;
+    text-align: left;
+    width: 100%px;
+}
+footer {
+    text-align: right;
+    background-color: black;
+    padding: 10%;
+    margin: 0%;
+}
+}
+main {
+    background-color: black;
+    padding-bottom: 30%%;
+    margin: 0;
+
+}
+div {
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+}
+p {
+    padding: 0%;
+    margin: 0%;
+}
