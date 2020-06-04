@@ -4,6 +4,42 @@
     max-height: 675px;
     align-content: center;
  }
+ .thumb {
+    width: 50%;
+    padding: 4%;
+    position: absolute;
+    left: 32%;
+    margin-left: -103px;
+}
+#dwarf {
+    margin-top: 0%;
+}
+#space {
+    margin-top: 33%;
+}
+#strat {
+    margin-top: 66%;
+}
+.thumbCaption {
+    color: #ffffff;
+    width: 50%;
+    padding: 4%;
+    position: absolute;
+    left: 32%;
+    margin-left: -103px;
+}
+#dwarfThumb {
+    text-align: center;
+    margin-top: 25%;
+}
+#spaceThumb {
+    text-align: center;
+    margin-top: 58%;
+}
+#stratThumb {
+    text-align: center;
+    margin-top: 91%;
+}
  h2 {
     text-align: center;
     color: white !important;
@@ -85,7 +121,14 @@ footer {
     padding-bottom: 0;
     margin: 0%;
 }
-
+#mission {
+    padding: 10px;
+    width: 40%;
+    position: absolute;
+    left: 38%;
+    margin-left: -103px;
+    color: white;
+}
 main {
     color: #ffffff;
     background-color: black;
@@ -109,6 +152,7 @@ p {
     padding: 50% 0 0 0;
     text-align: right;
     border-style: none;
+    margin-top: 100%;
 }
 
 #contactForm {
