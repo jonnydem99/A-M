@@ -25,12 +25,24 @@
         <h4 class="text-white">Just fill out the form below and we will get back to you shortly.</h4>
         </div>
         <div id="contactForm">
-            <input type="text" placeholder="first name" class="singleLine"> <br><br>
-            <input type="text" placeholder="last name" class="singleLine"> <br><br>
-            <input type="email" placeholder="email" class="singleLine"> <br><br>
-            <p>Message:</p><textarea name="question" id="suggestion" cols="40" rows="10"></textarea> <br>
-            <form action="ThankYou.html">
-                <input type="submit" value="Submit" />
+            <form
+                action="https://formspree.io/xwkroynv"
+                method="POST"
+                >
+                <label>
+                    email:
+                    <input type="email" name="_replyto" required>
+                </label>
+                <label>
+                    message:
+                    <textarea name="message" required></textarea>
+                </label>
+                first name:
+                <input type="text" placeholder="first name" class="singleLine" required> <br><br>
+                last name:
+                <input type="text" placeholder="last name" class="singleLine"> <br><br>
+
+                <button type="submit">Send</button>
             </form>
         </div>
         </div>

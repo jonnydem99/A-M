@@ -1,0 +1,5 @@
+As a member of the video games media I want to be able to contact the developers of Future Punk Studios.
+
+As a person that is looking for a video game developer job I want to send my resume to Future Punk Studios.
+
+As a fan I want to read about my favorite games and look at screenshots.
