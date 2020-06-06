@@ -1,4 +1,4 @@
-Jonathan Niess 
+**Jonathan Niess.**
 This website is a company website for a fake video game developer named Future Punk Studios.
 
 The Future Punk Studios website has basic information on games, contact information, and a mission statement.
