@@ -37,7 +37,7 @@
         font-weight: lighter;
     }
     body {
-        font-family: "News Cycle";
+        font-family: "News Cycle" !important;
     }
     header {
         font-family: "Contrail One";
@@ -46,26 +46,14 @@
         color: #888888;
         margin: 5px 0px;
         padding: 5px 5px;
-        box-shadow: -1px 01px 6px
+        box-shadow: -1px -1px 6px #888888;
     }
-    section#carousel > figure > img {
-        display: none;
-        margin: 0px auto;
+    .carousel-inner {
+        text-align: center;
     }
-    section#carousel > figure.visible > img {
-        display: block;
-        position: relative;
-        overflow: hidden;
+    .carousel .item > img {
+        display: inline-block;
     }
-    section#carousel > figure > figcaption {
-        display: none;
-        }
-    section#carousel > figure.visible > figcaption {
-        display: block;    
-        text-align: center;  
-        font-weight: bold;
-        font-size: 1.5em;
-        }
 
     @media print {
         header h2 {

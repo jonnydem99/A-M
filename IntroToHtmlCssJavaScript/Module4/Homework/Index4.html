@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
-        <link rel="stylesheet" href="style4.css" />
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <title>Contoso News</title>
-        <script type="text/javascript" src="js/script.js"></script>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style4.css" />
     </head>
-    <body>
+    <body class="container">
       <header>
       
       <h1>Contoso News</h1>
       <h2>On Time, On Topic</h2>
       </header>
-      <section id="carousel">
-        <figure class="visible"><img src="img/efficient_cars.png" alt="Efficient Cars"> 
-          <figcaption>2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption> </figure>
-
-        <figure><img src="img/natural_disaster.png" alt="Natural Disaster"> 
-          <figcaption>Hurricane Threatens to Touch Down on the East Coast This Weekend</figcaption> </figure>
-        
-          <figure><img src="img/health_records.png" alt="Health Records"> 
-          <figcaption>Many Doctors are Moving to Digital Health Records This Year</figcaption> </figure>
-
+      <section id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <figure class="item active">
+              <img src="img/efficient_cars.png" alt="Efficient Cars" />
+              <figcaption class="carousel-caption">2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption>
+          </figure>
+          <figure class="item">
+              <img src="img/natural_disaster.png" alt="Natural Disaster" />
+              <figcaption class="carousel-caption">Hurricane Threatens to Touch Down on the East Coast This Weekend</figcaption>
+          </figure>
+          <figure class="item">
+              <img src="img/health_records.png" alt="Health Records" />
+              <figcaption class="carousel-caption">Many Doctors are Moving to Digital Health Records This Year</figcaption>
+          </figure>
+      </div>
       </section>
-      <Main>
+      <Main class="row">
         <h3>Latest Articles</h3>
-        <article>
+        <article class="well col-md-4">
           <h4>International Story</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tortor quam, porttitor in tempus at, fringilla accumsan arcu.
@@ -35,7 +44,7 @@
             <a href="#" target="_blank">Read More...</a>
           </p>
         </article>
-        <article>
+        <article class="well col-md-4">
           <h4>Finance Story</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tortor quam, porttitor in tempus at,
@@ -47,7 +56,7 @@
            <a href="#" target="_blank">Read More...</a>
           </p>
         </article>
-        <article>
+        <article class="well col-md-4">
           <h4>Technology Story</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tortor quam, porttitor in tempus at,
             fringilla accumsan arcu. Aenean sit amet condimentum metus, quis ornare nisl. Phasellus luctus pellentesque faucibus. 
@@ -59,5 +68,19 @@
           </p>
         </article>
       </Main>
+      <summary class="panel panel-default col-md-8 col-md-offset-2">
+        <div class="panel-heading">Sign Up For Our Emails</div>
+        <form class="form-horizontal panel-body">
+            <label>E-Mail Address: </label>
+            <input type="text" required="required" />
+            <label>Delivery Preference: </label>
+            <select>
+                <option>Daily</option>
+                <option>Weekly</option>
+                <option>Monthly</option>
+            </select>
+            <input type="submit" value="Sign-Up" />
+        </form>
+    </summary>
     </body>
     <footer></footer>
