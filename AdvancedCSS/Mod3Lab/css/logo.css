@@ -1,0 +1,17 @@
+/***************************
+Logo Modules
+***************************/
+.logo {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.logo-primary {
+  width: 64px;
+  height: 64px;
+}
+
+.logo-primary img {
+  height: 100%;
+}
+/*# sourceMappingURL=logo.css.map */

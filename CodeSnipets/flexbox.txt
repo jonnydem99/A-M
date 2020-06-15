@@ -1,0 +1,7 @@
+
+//use flexbox on container
+.container-flex {
+   display: flex;
+}
+
+values: https://docs.google.com/document/d/1ECjeZ8zti0Xb-agug5O5pB13_2rAzMWJCofyLznuJEM/edit?usp=sharing
