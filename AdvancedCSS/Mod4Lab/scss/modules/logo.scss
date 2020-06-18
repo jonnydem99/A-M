@@ -9,9 +9,10 @@ Logo Modules
   width: 64px;
   height: 64px;
   @include small-and-above {
+    margin-right: auto;
     width: auto;
     height: 50px;
-    float: left;
+    margin-right: auto;
   }
 }
 .logo-primary img {

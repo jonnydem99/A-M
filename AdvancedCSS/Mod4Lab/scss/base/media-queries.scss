@@ -1,4 +1,5 @@
 $mq-1: 48em !default; /* 768px / 16px = 48em */
+$mq-2: 62em !default;
 
 /* Extra Small Only */
 @mixin extra-small-only {
@@ -13,3 +14,9 @@ $mq-1: 48em !default; /* 768px / 16px = 48em */
         @content;
     }
 }
+
+@mixin medium-and-above {
+    @media only screen and (min-width : $mq-2) {
+     @content;
+    }
+   }

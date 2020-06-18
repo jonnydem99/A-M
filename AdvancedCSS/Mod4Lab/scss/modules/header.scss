@@ -11,6 +11,9 @@ Header
     position: absolute;
     z-index: 99;
     width: 100%;
+    .container {
+      @include flexbox-display();
+    }
     &:after {
       content: "";
       display: table;
