@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-
+        <script src=".scripts/jquery-3.5.1.min.js"></script>
+        <script src=".scripts/popper.min.js"></script>
+        <script src=".scripts/bootstrap.min.js"></script>
 
         <nav class="navbar navbar-expand-sm navbar-light bg-secondary fixed-top">
             <a class="navbar-brand nav navbar-nav navbar-logo px-3" href="index.html">Music Store</a>
@@ -49,57 +51,51 @@
         <br>
         <br>
         <br>
-
-
-        <div class="container">
-
-            <div class="row">
-    
-                <div class="container col-6 col-lg-4 p-4">
-    
-                
-
-                    <img src="/images/Album.png" alt="album">
-    
+        <div id="albumSubmit" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="section1HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#albumSubmit" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                  Section 1
+                </a>
+                    </h5>
                 </div>
-    
-                <div class="container col-6 col-lg-8 bg-secondary rounded text-center p-4">
-    
-                    <h3 style=font-size:300%>Album Title</h3>
-                    <h3 style=font-size:300%>Artist</h3>
-                    <p style=font-size:118%>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    
-                    Nulla luctus magna vitae velit ullamcorper, 
-    
-                    vel pellentesque arcu malesuada. Curabitur eros magna, 
-    
-                    blandit finibus sagittis sed, tincidunt placerat nisl. 
-    
-                    Integer quis dolor dui. Curabitur tempus purus metus,
-    
-                    erat condimentum sed. Fusce eget tellus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    
-                    Nulla luctus magna vitae velit ullamcorper, 
-    
-                    vel pellentesque arcu malesuada. Curabitur eros magna, 
-    
-                    blandit finibus sagittis sed, tincidunt placerat nisl. 
-    
-                    Integer quis dolor dui. Curabitur tempus purus metus,
-    
-                    erat condimentum sed. Fusce eget tellus est.
-                    </p>
-    
+                <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                    <div class="card-body">
+                        Section 1 content
+                    </div>
                 </div>
-    
             </div>
-    
+            <div class="card">
+                <div class="card-header" role="tab" id="section2HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#albumSubmit" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                  Section 2
+                </a>
+                    </h5>
+                </div>
+                <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                    <div class="card-body">
+                        Section 2 content
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="section3HeaderId">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#albumSubmit" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">
+                  Section 3
+                </a>
+                    </h5>
+                </div>
+                <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                    <div class="card-body">
+                        Section 3 content
+                    </div>
+                </div>
+            </div>
         </div>
 
 
-        <script src=".scripts/jquery-3.5.1.min.js"></script>
-        <script src=".scripts/popper.min.js"></script> 
-        <script src=".scripts/bootstrap.min.js"></script>
     </body>
 </html>
