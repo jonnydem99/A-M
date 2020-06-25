@@ -39,15 +39,16 @@
         </nav>
         <br><br><br>
     -->
-        <div class="text-white bg-secondary p-4">
+    <div class="jumbotron">
+        <div class="text-white bg-secondary p-4 rounded">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 style=font-size:600%>Music Store</h1>
+                    <h1 style=font-size:600%>Submit Album</h1>
                 </div>
             </div>
         </div>
-
-
+    </div>
+<!--
         <div class="container mt-2">
 
             <div class="row">
@@ -129,8 +130,39 @@
                 </div>
                 </div>
         </div>
+    -->
 
-
+<div class="container bg-secondary p-0">
+        <div class="p-4 my-auto">
+            <div class="text-white bg-secondary p-2 rounded">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="btn-primary rounded" style=font-size:250%>Album Title and Artist</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form>
+        <div class="form-group">
+        <div class="row">
+          <label for="exampleInputEmail1" class="col-md-2 offset-2 text-right p-0 my-auto">Artist:</label>
+          <div class="container col-md-6">
+            <input type="text" class="form-control" id="artist" placeholder="Led Zeppelin">
+          </div>
+        </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+            <label for="exampleInputEmail1" class="col-md-2 offset-2 text-right p-0 my-auto">Album:</label>
+            <div class="container col-md-6">
+              <input type="text" class="form-control" id="album" placeholder="Led Zeppelin III">
+            </div>
+            </div>
+          </div>
+        <button type="submit" class="btn btn-primary col-md-7 offset-3 my-auto">Submit</button>
+        <br><br>
+    </form>
+</div>
 
         <script src="scripts/jquery-3.5.1.min.js"></script>
         <script src="scripts/popper.min.js"></script> 
