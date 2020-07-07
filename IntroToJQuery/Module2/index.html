@@ -1,0 +1,104 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <style>
+  body {
+   font-family: Verdana;
+  }
+  h1, h2, h3 {
+   color: darkblue;
+  }
+  .rating-circle {
+   height: 2em;
+   width: 2em;
+   border: .1em solid black;
+   border-radius: 1.1em;
+   display: inline-block;
+   margin: 0;
+   padding: .1em;
+  }
+
+  .rating-hover {
+   background-color: yellow;
+  }
+
+  .rating-chosen {
+   background-color: green;
+  }
+ </style>
+</head>
+<body>
+ <h1>Contoso Web Developer Conference</h1>
+ <h2>Finding elements using jQuery</h2>
+ <div>This session is about identifying elements using jQuery methods and selectors.</div>
+ <h3>Rate this session</h3>
+ <div id="rating-container" max-value="5">
+
+ </div>
+
+<div>
+  <label for="max-value">Enter max value:</label>
+  <input type="text" id="max-value" />
+  <button type="button" id="update-max-value">Update max value</button>
+</div>
+
+ <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+
+ <script>
+        // your answer would go here
+        $(function() {
+  var circle = '<div class="rating-circle"></div>';
+  var selections = 0;
+  var clicked = false;
+
+  drawCircles();
+ 
+  // on load and when maxValue updated
+  function drawCircles() {
+      $('#rating-container').empty();
+      clicked = false; // reset green circle count
+      for (var i = 0; i < $('#rating-container').attr('max-value'); i++) {
+        $('#rating-container').append(circle);
+      }}
+ 
+    // draw maxValue circles
+  $('#update-max-value').click(function() {
+    if ($.isNumeric($('#max-value').val())) {
+      $('#rating-container').attr('max-value', $('#max-value').val());
+      drawCircles();
+    } else alert("Please enter a number.");
+  });
+
+  // Send rating to server and retrieve result
+  $('#save-rating').click(function() {
+    var maxValue = $('#rating-container').attr('max-value');
+    var selValue = selections + 1;
+    var rating = {value: selValue,maxValue: maxValue}
+    $.post('https://jquery-edx.azurewebsites.net/api/Rating', rating, function(data) {
+      $('#output').text(data.message);
+    })});
+
+  // paint circles yellow on mouseenter
+  $(document).on('mouseenter', '.rating-circle', function() {
+    $(this).prevAll().andSelf().addClass('rating-hover');
+    $('.rating-circle').removeClass('rating-chosen');});
+ 
+  // remove yellow and show chosen circles on mouseleave
+  $(document).on('mouseleave', '.rating-circle', function() {
+    $(this).prevAll().andSelf().removeClass('rating-hover');
+    if (clicked) {
+      var paintedCircles = $('#rating-container').children().get(selections); //convert to jQuery obj
+      $(paintedCircles).prevAll().andSelf().addClass('rating-chosen');
+    }});
+ 
+  // paint circles green on click
+  $(document).on('click', '.rating-circle', function() {
+    clicked = true; // only after clicked at least once
+    selections = $('.rating-circle').index(this);
+    $(this).prevAll().andSelf().addClass('rating-chosen');
+    $(this).nextAll().removeClass('rating-chosen');
+  })});
+
+ </script>
+</body>
+</html>
