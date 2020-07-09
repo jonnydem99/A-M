@@ -1,19 +1,24 @@
 @font-face {
-    font-family: earwig;
-    src: url('fonts/earwig.ttf') format('truetype');
+    font-family: contrail;
+    src: url('/fonts/contrail.ttf') format('truetype');
   }
-  
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
 
 .container {
-    border: thin;
-    border-radius: 30;
+    border-radius: 30px;
     margin: 2%;
 }
 
   h1 {
-      font-family: earwig, Arial, Helvetica, sans-serif
+      font-family: contrail, Arial, Helvetica, sans-serif
+  }
+
+.activeBorder {
+    border: thick;
+    border-style: solid;
+    border-color: black;
   }
