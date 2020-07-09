@@ -1,0 +1,20 @@
+@font-face {
+  font-family: earwig;
+  src: url("fonts/earwig.ttf") format("truetype");
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  border: thin;
+  border-radius: 30;
+  margin: 2%;
+}
+
+h1 {
+  font-family: earwig, Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=base.css.map */

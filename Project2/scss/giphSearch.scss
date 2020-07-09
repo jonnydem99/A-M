@@ -1,0 +1,32 @@
+#gifs {
+    background-color: #eeccff;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95%;
+}
+#gifs img {
+    max-height: 200px;
+    padding: .5em;
+}
+#searchInput {
+    background-color: #eeccff;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+#gifTitle {
+    background-color: #d580ff;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+input[type="text"]::placeholder {
+    text-align: center;
+}
+input {
+    padding: .5%;
+    margin: .5%;
+}
