@@ -1,13 +1,13 @@
 $('document').ready(()=>{
     $('#searchbtn').click(()=>{
         searchGiphy();
+        addBorder();
     })
 
     function searchGiphy() {
         $(gifs).empty();
         var userInput = $('#search').val();
         var numberOfGifs = $('#numSearchGifs').val();
-
         
 
         if (userInput == 0) {
@@ -29,15 +29,14 @@ $('document').ready(()=>{
                     $("#gifs").append(`<img src="${giphy}" alt="gyphy image"/>`);
                     
                 })
-                /* setTimeout(addBorder, 1000);
-        function addBorder() {
-            if (('#gif').val !== "") {
-                $("#gifs").addClass('activeBorder');
-            }
-        }*/
+                setTimeout(addBorder, 1000);
+        
             })
             
     }
-        
-    
+    function addBorder() {
+    if (('#gif').val !== "") {
+        $("#gifs").addClass('activeBorder');
+        }
+    }   
 })

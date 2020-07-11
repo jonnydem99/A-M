@@ -1,5 +1,4 @@
 #gifs {
-  border: none;
   background-color: #eeccff;
   justify-content: space-around;
   display: flex;
@@ -11,7 +10,6 @@
   max-height: 200px;
   padding: .5em;
   margin: .5em;
-  border: medium;
 }
 
 #searchInput {
