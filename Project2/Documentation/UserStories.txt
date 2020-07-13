@@ -1,0 +1,7 @@
+User Stories
+
+1. As a user, I would like to search for gifs.
+
+2. As an internet user, I want to control search criteria.
+
+3. As a user, I would like to contact the creator of the app to give him a pat on the back.
