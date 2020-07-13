@@ -1,7 +1,9 @@
+  //add new font 'contrail'
 @font-face {
     font-family: contrail;
     src: url('/fonts/contrail.ttf') format('truetype');
   }
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -9,16 +11,87 @@ body {
 }
 
 .container {
+    background-color: #eeccff;
     border-radius: 30px;
     margin: 2%;
 }
 
-  h1 {
-      font-family: contrail, Arial, Helvetica, sans-serif
-  }
+h1 {
+    font-family: contrail, Arial, Helvetica, sans-serif
+}
 
 .activeBorder {
     border: thick;
     border-style: solid;
     border-color: black;
   }
+
+#menuItems {
+    list-style: none;
+}
+
+#menuItems li{
+    display: inline-block;
+    padding: 0px, 20px;
+  }
+
+#contactEmail {
+  text-align: center;
+}
+
+#aboutUs {
+  text-align: center;
+}
+
+
+  //When the screen is less than 1200 pixels wide, stack elements vertically
+@media screen and (max-width: 1200px) {
+  .topnav {
+    margin: 0 auto;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 18%;
+    height: fit-content;
+  }
+  #headContainer {
+    text-align: center;
+  }
+  #gLogo {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%;
+    width: 20%;
+  }
+  #header1 {
+    display: inline-block;
+    max-width: 98%;
+    align-items: center;
+    background-color: #d580ff;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    margin: 0 auto;
+  }
+#gifTitle {
+  align-items: center;
+  background-color: #d580ff;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+div {
+  width: 100%;
+}
+#whatIsGif {
+  margin: 2% auto;
+  margin-bottom: 2%;
+}
+#searchInput {
+  margin: 0 auto;
+}
+#gifs {
+  margin: 0 auto;
+  margin-top: 2%;
+}
+}
+

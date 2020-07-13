@@ -14,18 +14,19 @@
 
 #searchInput {
   background-color: #eeccff;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   padding: 2%;
-  margin: 2%;
+  margin: 0 auto;
+  margin-top: 2%;
+  max-width: 500px;
 }
 
 #gifTitle {
+  align-items: center;
   background-color: #d580ff;
-  justify-content: center;
   text-align: center;
-  padding: 2%;
-  margin: 2%;
+  margin: 1%;
 }
 
 input[type="text"]::placeholder {
@@ -36,5 +37,68 @@ input {
   padding: .5%;
   margin: .5%;
   text-align: center;
+}
+
+#whatIsGif {
+  padding: .5;
+  margin-top: 2%;
+  text-align: center;
+}
+
+#header1 {
+  display: flex;
+  max-width: 98%;
+  align-items: center;
+  background-color: #d580ff;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1%;
+  margin: 0 auto;
+}
+
+#gLogo {
+  margin-right: 15%;
+  margin-left: 2%;
+  width: 7em;
+  height: 7em;
+}
+
+#title {
+  padding: 1%;
+  font-size: 4em;
+  text-align: center;
+}
+
+.btn {
+  font-size: 1em;
+  margin: 5%;
+}
+
+.topnav {
+  background-color: #d580ff;
+  overflow: hidden;
+  width: 6%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.topnav a {
+  float: inline-end;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 2%;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.topnav a:hover {
+  background-color: #eeccff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #3d51c2;
+  color: white;
 }
 /*# sourceMappingURL=giphSearch.css.map */
