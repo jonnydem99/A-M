@@ -39,7 +39,10 @@ $('document').ready(()=>{
     function addBorder() {
     if (('#gif').val !== "") {
         $("#gifs").addClass('activeBorder');
+        } else {
+        $("#gifs").removeClass('activeBorder');
         }
+        
     }   
 
 
