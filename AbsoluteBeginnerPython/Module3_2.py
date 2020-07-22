@@ -9,6 +9,6 @@ def order_cheese(ch_weight):
         total = float(ch_weight)*7.99
         print("Your cheese purchase comes out to " + "$" + str(total))
 
-ch_weight = input("Enter cheese order weight")
+ch_weight = input("Enter cheese order weight. ")
 
 order_cheese(ch_weight)
