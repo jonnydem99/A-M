@@ -1,3 +1,0 @@
-getmodal
-datedropper
-owl carousel

@@ -1,4 +1,0 @@
-Karl,Larson,55000
-Sue,Baker,57000
-Tina,Turner,60000
-Sam,Adams,55000
